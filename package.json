@@ -1,0 +1,14 @@
+{
+  "name": "koa-basic",
+  "version": "1.0.0",
+  "main": "src/app/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon .",
+    "start": "node ."
+  },
+  "dependencies": {
+    "koa": "^2.6.1",
+    "nodemon": "^1.18.6"
+  }
+}
