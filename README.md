@@ -17,3 +17,9 @@ yarn add koa
 ```
 yarn add nodemon
 ```
+
+### Add koa-router dependency
+
+```
+yarn add koa-router
+```
