@@ -5,7 +5,10 @@ const router = new Router({
 });
 
 router.get("/", (ctx, next) => {
-  ctx.body = "hello koa-router";
+  ctx.body = {
+    body: "hello koa-router",
+    request: ctx.request.body
+  };
 });
 
 module.exports = router;

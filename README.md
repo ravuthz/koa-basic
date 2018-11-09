@@ -23,3 +23,9 @@ yarn add nodemon
 ```
 yarn add koa-router
 ```
+
+### Add koa-bodyparser
+
+```
+yarn add koa-bodyparser
+```
