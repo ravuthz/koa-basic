@@ -7,13 +7,26 @@
     "dev": "nodemon .",
     "start": "node ."
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "dependencies": {
     "koa": "^2.6.1",
     "koa-bodyparser": "^4.2.1",
-    "koa-router": "^7.4.0",
-    "nodemon": "^1.18.6"
+    "koa-router": "^7.4.0"
   },
   "devDependencies": {
-    "prettier": "^1.15.1"
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.1.3",
+    "lint-staged": "^8.0.4",
+    "nodemon": "^1.18.6",
+    "prettier": "1.15.1",
+    "pretty-quick": "^1.8.0"
   }
 }
