@@ -52,3 +52,15 @@ yarn add --dev prettier eslint-plugin-prettier eslint-config-prettier
 yarn add --dev husky lint-staged
 yarn add --dev pretty-quick
 ```
+
+## Add koa-logger for log every request in console
+
+```
+yarn add koa-logger
+```
+
+### Add koa-compress for compress response
+
+```
+yarn add koa-compress
+```
