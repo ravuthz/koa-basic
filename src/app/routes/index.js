@@ -22,4 +22,13 @@ router.get("/compress", ctx => {
   };
 });
 
+router.get("/success", ctx => {
+  const data = { id: 123, name: "success" };
+  ctx.ok(data, 200);
+});
+
+router.get("/failure", ctx => {
+  ctx.throw(404);
+});
+
 module.exports = router;

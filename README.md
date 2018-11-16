@@ -64,3 +64,15 @@ yarn add koa-logger
 ```
 yarn add koa-compress
 ```
+
+### Add koa-json-error
+
+```
+yarn add koa-json-error
+```
+
+### Add koa-respond
+
+```
+yarn add koa-respond
+```

@@ -2,6 +2,8 @@ const Koa = require("koa");
 const logger = require("koa-logger");
 const compress = require("koa-compress");
 const bodyParser = require("koa-bodyparser");
+const jsonResponseError = require("koa-json-error");
+const jsonResponseSucess = require("koa-respond");
 const zlib = require("zlib");
 
 const router = require("./routes");
@@ -17,6 +19,15 @@ app.use(
   })
 );
 app.use(bodyParser());
+app.use(
+  jsonResponseError(err => ({
+    error: true,
+    status: err.status || 500,
+    message: err.message,
+    stackTrace: process.env.NODE_ENV === "production" ? undefined : err.stack
+  }))
+);
+app.use(jsonResponseSucess());
 app.use(router.routes());
 app.use(router.allowedMethods());
 
